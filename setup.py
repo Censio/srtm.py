@@ -18,8 +18,8 @@
 import distutils.core as mod_distutilscore
 
 mod_distutilscore.setup(
-    name = 'SRTM.py',
-    version = '0.2.4',
+    name = 'censio-srtm',
+    version = '0.1.UNKNOWN',
     description = 'Python parser for the Shuttle Radar Topography Mission elevation data',
     license = 'Apache License, Version 2.0',
     author = 'Tomo Krajina',
