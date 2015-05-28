@@ -15,23 +15,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import distutils.core as mod_distutilscore
+from setuptools import setup
 
-mod_distutilscore.setup(
-    name = 'censio-srtm',
-    version = '0.1.UNKNOWN',
-    description = 'Python parser for the Shuttle Radar Topography Mission elevation data',
-    license = 'Apache License, Version 2.0',
-    author = 'Tomo Krajina',
-    author_email = 'tkrajina@gmail.com',
-    url = 'https://github.com/tkrajina/srtm.py',
-    packages = ['srtm',],
-    package_data = {'': ['*.json']},
-    include_package_data = True,
-    classifiers = [
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
-    ],
-    scripts=['gpxelevations']
-)
+setup(
+    name='censio-srtm',
+    version='0.1.UNKNOWN',
+    description='Python parser for the Shuttle Radar Topography Mission elevation data',
+    license='Apache License, Version 2.0',
+    author='Tomo Krajina',
+    author_email='tkrajina@gmail.com',
+    url='https://github.com/tkrajina/srtm.py',
+    packages=['srtm'],
+    package_data=dict(srtm=['*.json']))
 
