@@ -117,7 +117,7 @@ class FileHandler:
         elif 'HOMEPATH' in mod_os.environ:
             result = '{0}/.cache/srtm'.format(mod_os.environ['HOMEPATH'])
         else:
-            raise Exception('No default HOME directory found, please specify a path where to store files')
+            result = '/opt/srtm'
 
         if not mod_path.exists(result):
             mod_os.makedirs(result)
