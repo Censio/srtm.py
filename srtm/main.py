@@ -117,7 +117,7 @@ class FileHandler:
         elif 'HOMEPATH' in mod_os.environ:
             result = '{0}/.cache/srtm'.format(mod_os.environ['HOMEPATH'])
         else:
-            result = '/opt/srtm'
+            result = '.'
 
         if not mod_path.exists(result):
             mod_os.makedirs(result)
